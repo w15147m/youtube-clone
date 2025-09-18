@@ -31,7 +31,9 @@ header {
 .bar,
 .mic,
 .bell,
-.profile {
+.profile,
+.thumbnail i
+{
   width: 40px;
   height: 40px;
   display: flex;
@@ -59,14 +61,10 @@ header {
   height: 48px;
   display: flex;
   justify-content: center;
-
-
+  background-color: aqua;
 }
 
-.mic {
-  background-color: #F0EBEB;
-  border-radius: 50%;
-}
+
 
 .search input {
   width: 615px;
@@ -76,9 +74,7 @@ header {
   border-color: #898989;
   border-right: 0;
   background-color: #fff;
-  box-shadow: inset 0 1px 2px #eee;
   border-radius: 40px 0 0 40px;
-  margin-left: 32px;
   padding: 0 4px 0 16px;
 }
 
@@ -90,7 +86,6 @@ header {
   border-color: #898989;
   border-right: 0;
   background-color: #F0EBEB;
-  box-shadow: inset 0 1px 2px #eee;
   border-radius: 0 40px 40px 0;
 }
 
@@ -99,6 +94,10 @@ header {
   font-size: 24px;
 }
 
+.mic {
+  background-color: #F0EBEB;
+  border-radius: 50%;
+}
 
 
 
@@ -111,4 +110,102 @@ header {
   background-color: #F0EBEB;
   border: 0px;
   border-radius: 40px;
+}
+
+
+.container {
+  display: flex;
+}
+
+
+/* <!-- -------------------aside ------------------ --> */
+
+aside {
+  width: 240px;
+  height: 100vh;
+  background-color: #FFFFFF;
+  padding: 15px;
+}
+
+.aside-item {
+  width: 204px;
+  height: 40px;
+  padding-left: 16px;
+  padding-right: 16px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-size: 17px;
+  border-radius: 10px;
+
+}
+
+.aside-item:hover {
+  background-color: #e7e5e5;
+}
+
+.home {
+  background-color: #F0EBEB;
+
+}
+
+.aside-item i {
+  padding-right: 40px;
+  font-size: 20px;
+}
+
+/* <!-- -------------------nav & main------------------ --> */
+.nav-main {
+  width: 100%;
+  border-top: 1px solid #D3D3D3;
+
+}
+
+/* <!-- -------------------nav ------------------ --> */
+nav {
+  height: 55px;
+  width: 100%;
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  overflow: scroll;
+}
+
+.nav-item {
+  margin-left: 12px;
+  background-color: #F0EBEB;
+  width: fit-content;
+  height: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-size: 17px;
+  border-radius: 10px;
+
+}
+
+.all {
+  background-color: #070707;
+  color: white;
+
+}
+
+/* <!--<!--<!--<!--<!--<!--  main--> -->-->-->-->-->-->--> */
+main {
+  border-top: 1px solid #D3D3D3;
+  padding: 16px;
+
+}
+.video-card img{
+  width: 422px;
+  height: 238px;
+  border-radius: 12px;
+
+}
+.thumbnail i:hover{
+ background-color: #000000;
+  border-radius: 50%;
+  color: white;
 }
