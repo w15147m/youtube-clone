@@ -5,9 +5,6 @@
 }
 
 /* ''''''header''''''' */
-body {
-  background-color: beige;
-}
 
 header {
   padding-left: 16px;
@@ -32,9 +29,9 @@ header {
 .mic,
 .bell,
 .profile,
-.thumbnail i
-{
-  width: 40px;
+.ellipsis,
+.thumbnail i {
+  min-width: 40px;
   height: 40px;
   display: flex;
   justify-content: center;
@@ -43,7 +40,8 @@ header {
 
 .bar:hover,
 .bell:hover,
-.profile {
+.profile,
+.ellipsis:hover {
   background-color: #F0EBEB;
   border-radius: 50%;
 
@@ -61,7 +59,6 @@ header {
   height: 48px;
   display: flex;
   justify-content: center;
-  background-color: aqua;
 }
 
 
@@ -115,6 +112,7 @@ header {
 
 .container {
   display: flex;
+  max-width: 99VW;
 }
 
 
@@ -156,19 +154,18 @@ aside {
 
 /* <!-- -------------------nav & main------------------ --> */
 .nav-main {
-  width: 100%;
-  border-top: 1px solid #D3D3D3;
+ width: 100%;
 
 }
 
 /* <!-- -------------------nav ------------------ --> */
 nav {
   height: 55px;
-  width: 100%;
   background-color: #FFFFFF;
   display: flex;
   align-items: center;
   overflow: scroll;
+  width: 100%;
 }
 
 .nav-item {
@@ -194,18 +191,61 @@ nav {
 
 /* <!--<!--<!--<!--<!--<!--  main--> -->-->-->-->-->-->--> */
 main {
-  border-top: 1px solid #D3D3D3;
   padding: 16px;
+  display: flex; 
+ justify-content: space-between;
+  flex-wrap: wrap;
+  
 
 }
-.video-card img{
+
+.video-card {
+   width: 422px;
+}
+
+.thumbnail {
+  width: fit-content;
+  position: relative;
+}
+
+.thumbnail img {
   width: 422px;
   height: 238px;
   border-radius: 12px;
 
 }
-.thumbnail i:hover{
- background-color: #000000;
+
+.thumbnail i:hover {
+  background-color: #0000008a;
   border-radius: 50%;
   color: white;
+
+
+}
+
+.icons {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.video-info {
+  padding-top: 12px;
+  height: 88px;
+  display: flex;
+  gap: 8px;
+  justify-content: space-between;
+}
+
+.info {
+  flex-grow: 1;
+
+}
+.info .title {
+  text-wrap: wrap;
+}
+.channel-name,
+.views-time{
+  color: #606060;
+  font-size: 14px;
 }
